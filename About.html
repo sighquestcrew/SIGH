@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SIGH</title>
+        <link href="./output.css" rel="stylesheet">
+        <link rel="shortcut icon" href="Images/sitelogo.png">
+
+
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+
+        <style>
+
+          .nav-link {
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+          }
+          /* Custom hover styles */
+          .nav-link:hover {
+            color: #376aec;
+            transition: transform 0.2s ease-in-out;
+            transform: scale(1.1); /* Scale up on hover */
+          }
+        </style>
+      </head>
+<body class="bg-black">
+    <header class="p-3">
+        <nav class="flex items-center justify-between m-5">
+          <div class="text-white"><p class="text-2xl font-bold">SIGH</p></div>
+          <div class="flex space-x-8">
+            <a href="index.html">
+            <p class="text-white nav-link">Home</p></a>
+            <a href="About.html">
+            <p class="text-white nav-link">About</p></a>
+            <a href="Project.html">
+            <p class="text-white nav-link">Projects</p></a>
+            <a href="Services.html">
+            <p class="text-white nav-link">Services</p></a>
+
+          </div>
+        </nav>
+      </header>
+
+      <main class="mt-12">
+        <section class="bg-black dark:bg-gray-900">
+            <div class="container px-6 py-10 mx-auto">
+                <h1 class="text-3xl font-semibold text-center text-white capitalize lg:text-3xl dark:text-white">Our Executive Team</h1>
+
+                <p class="max-w-2xl mx-auto my-6 text-center text-white dark:text-gray-300 text-2xl ">
+                    We're a skilled team that builds user-friendly websites, writes clear documentation,
+                    develops engaging Android apps, and tackles complex machine learning projects.
+                  </p>
+
+
+                <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+                    <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="Images/man.png" alt="">
+
+                        <h1 class="mt-4 text-2xl font-semibold text-white capitalize dark:text-white group-hover:text-white">Shubham Bhayaje</h1>
+
+                        <p class="mt-2 text-white capitalize dark:text-gray-300 group-hover:text-gray-300">Web Backend Developer</p>
+                    </div>
+
+
+                    <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="Images/thisisme.jpg" alt="">
+
+                        <h1 class="mt-4 text-2xl font-semibold text-white capitalize dark:text-white group-hover:text-white">Aditya Rathivadekar</h1>
+
+                        <p class="mt-2 text-white capitalize dark:text-gray-300 group-hover:text-gray-300">Lead Developer</p>
+
+                    </div>
+
+
+
+                    <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="Images/gamer.png" alt="">
+
+                        <h1 class="mt-4 text-2xl font-semibold text-white capitalize dark:text-white group-hover:text-white">Manas Surve</h1>
+
+                        <p class="mt-2 text-white capitalize dark:text-gray-300 group-hover:text-gray-300">Lead designer / Android Developer</p>
+
+
+                    </div>
+
+
+
+                    <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="Images/boy.png" alt="">
+
+                        <h1 class="mt-4 text-2xl font-semibold text-white capitalize dark:text-white group-hover:text-white">Shubham Salunkhe</h1>
+
+                        <p class="mt-2 text-white capitalize dark:text-gray-300 group-hover:text-gray-300">Full stack developer</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="absolute bottom-0 left-0 z-0 h-1/3 w-full border-b"
+            style="background-image: linear-gradient(to right top, rgba(22, 235, 235, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2);">
+        </div>
+        <div class="absolute bottom-0 right-0 z-0 h-1/3 w-full"
+            style="background-image: linear-gradient(to left top, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%); border-color: rgba(92, 79, 240, 0.2);">
+        </div>
+
+
+      </main>
+
+</body>
+</html>

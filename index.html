@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGH</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="Images/sitelogo.png">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+
+    .nav-link {
+      transition: transform 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    }
+    /* Custom hover styles */
+    .nav-link:hover {
+      color: #376aec;
+      transition: transform 0.2s ease-in-out;
+      transform: scale(1.1); /* Scale up on hover */
+    }
+  </style>
+</head>
+<body class="bg-black">
+  <header class="p-3">
+    <nav class="flex items-center justify-between m-5">
+      <div class="text-white"><p class="text-2xl font-bold">SIGH</p></div>
+      <div class="flex space-x-8">
+        <a href="index.html">
+        <p class="text-white nav-link">Home</p></a>
+        <a href="About.html">
+        <p class="text-white nav-link">About</p></a>
+        <a href="Project.html">
+        <p class="text-white nav-link">Projects</p></a>
+        <a href="Services.html">
+        <p class="text-white nav-link">Services</p></a>
+
+      </div>
+    </nav>
+  </header>
+  <main class="p-8">
+    <section class="m-10 ml-10 mt-11 flex flex-wrap">
+      <div class="w-1/2">
+        <p class="text-white text-3xl font-bold hello-text">
+          Hello there!
+        </p>
+        <p class="text-white text-7xl font-bold hello-text">
+          SIGH
+        </p>
+        <p class="text-white text-3xl font-bold hello-text">
+          And we are <span class="text-cyan-400">A small group</span>
+        </p>
+        <p class="text-white text-2xl">
+          Welcome to SIGH, where innovation meets expertise! <br> We are a dedicated team of developers
+          specializing in crafting custom websites,<br> Android applications, and cutting-edge machine learning
+          projects tailored to meet <br>
+          your unique needs and aspirations.
+          Our mission is to transform your ideas into reality.
+        </p>
+
+        <div class="mt-12 flex justify-start space-x-8">
+          <img src="Images/Twitter.jpg" class=" rounded-full" alt="Twitter logo">
+          <img src="Images/Insta.jpg" class=" rounded-full" alt="Instagram logo">
+        </div>
+
+<a href="Contact.html">
+        <div class=" gap-8 flex items-start justify-start mt-8">
+          <div class="relative group">
+            <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+            <button class="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600">
+              <span class="flex items-center space-x-5">
+                <img src="Images/part2.png" width="30" height="30">
+                <span class="pr-6  text-gray-100">Contact US </span>
+              </span>
+              <span class="pl-6 text-indigo-400 group-hover:text-gray-100 transition duration-200">Get in touch &rarr;</span>
+            </button>
+          </div>
+        </div> </a>
+
+      </div>
+
+      <div class="w-1/2 flex justify-end items-center">
+        <img src="Images/homelogo.jpg" class="max-h-full">
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
