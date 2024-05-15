@@ -3,9 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>SIGH</title>
   <link href="./output.css" rel="stylesheet">
   <link rel="shortcut icon" href="Images/sitelogo.png">
+  <script src=
+"https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js">
+	</script>
+
+<script src=
+"https://cdn.tailwindcss.com">
+	</script>
+
 
 
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
@@ -24,68 +33,106 @@
   </style>
 </head>
 <body class="bg-black">
-  <header class="p-3">
-    <nav class="flex items-center justify-between m-5">
-      <div class="text-white"><p class="text-2xl font-bold">SIGH</p></div>
-      <div class="flex space-x-8">
-        <a href="index.html">
-        <p class="text-white nav-link">Home</p></a>
-        <a href="About.html">
-        <p class="text-white nav-link">About</p></a>
-        <a href="Project.html">
-        <p class="text-white nav-link">Projects</p></a>
-        <a href="Services.html">
-        <p class="text-white nav-link">Services</p></a>
+  <header class="bg-black py-4">
+		<nav class="flex justify-between m-5
+					items-center w-[92%] mx-auto">
+			<div class="w-16 ml-9 text-2xl font-bold text-white">
+				SIGH
+			</div>
 
-      </div>
-    </nav>
-  </header>
+			<div class="nav-links space-x-5  duration-500 md:static
+						absolute md:min-h-fit min-h-[60vh]
+						left-0 top-[-100%] md:w-auto w-full
+						flex items-center justify-end px-5">
+				<ul class="flex md:flex-row flex-col
+						md:items-center md:gap-[4vw] gap-8">
+					<li>
+						<a class="nav-link text-white" href="index.html">Home</a>
+					</li>
+					<li>
+						<a class="nav-link text-white" href="About.html">About</a>
+					</li>
+					<li>
+						<a class="nav-link text-white" href="Contact.html">Contact Us</a>
+					</li>
+					<li>
+						<a class="nav-link text-white" href="Project.html">Projects</a>
+					</li>
+					<li>
+						<a class="nav-link text-white" href="Services.html">Services</a>
+					</li>
+				</ul>
+			</div>
+			<div class="flex items-center gap-6">
+				<ion-icon onclick="onToggleMenu(this)"
+						name="menu" class="text-3xl cursor-pointer
+											md:hidden text-cyan-400">
+				</ion-icon>
+			</div>
+		</nav>
+	</header>
+
+
+
   <main class="p-8">
-    <section class="m-10 ml-10 mt-11 flex flex-wrap">
-      <div class="w-1/2">
-        <p class="text-white text-3xl font-bold hello-text">
-          Hello there!
-        </p>
-        <p class="text-white text-7xl font-bold hello-text">
-          SIGH
-        </p>
-        <p class="text-white text-3xl font-bold hello-text">
-          And we are <span class="text-cyan-400">A small group</span>
-        </p>
-        <p class="text-white text-2xl">
-          Welcome to SIGH, where innovation meets expertise! <br> We are a dedicated team of developers
-          specializing in crafting custom websites,<br> Android applications, and cutting-edge machine learning
-          projects tailored to meet <br>
-          your unique needs and aspirations.
-          Our mission is to transform your ideas into reality.
-        </p>
 
-        <div class="mt-12 flex justify-start space-x-8">
-          <img src="Images/Twitter.jpg" class=" rounded-full" alt="Twitter logo">
-          <img src="Images/Insta.jpg" class=" rounded-full" alt="Instagram logo">
-        </div>
+    <section class="m-10 ml-10 mt-11 flex flex-col md:flex-row justify-center items-center">
+      <div class="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+          <p class="text-white text-3xl font-bold hello-text">
+              Hello there!
+          </p>
+          <p class="text-white text-7xl font-bold hello-text">
+              SIGH
+          </p>
+          <p class="text-white text-3xl font-bold hello-text">
+              And we are <span class="text-cyan-400">A small group</span>
+          </p>
+          <p class="text-white text-2xl">
+              Welcome to SIGH, where innovation meets expertise! <br> We are a dedicated team of developers
+              specializing in crafting custom websites,<br> Android applications, and cutting-edge machine learning
+              projects tailored to meet <br>
+              your unique needs and aspirations. Our mission is to transform your ideas into reality.
+          </p>
 
-<a href="Contact.html">
-        <div class=" gap-8 flex items-start justify-start mt-8">
-          <div class="relative group">
-            <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-            <button class="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600">
-              <span class="flex items-center space-x-5">
-                <img src="Images/part2.png" width="30" height="30">
-                <span class="pr-6  text-gray-100">Contact US </span>
-              </span>
-              <span class="pl-6 text-indigo-400 group-hover:text-gray-100 transition duration-200">Get in touch &rarr;</span>
-            </button>
+          <div class="mt-8 flex justify-center md:justify-start space-x-8">
+              <img src="Images/Twitter.jpg" class="rounded-full" alt="Twitter logo">
+              <img src="Images/Insta.jpg" class="rounded-full" alt="Instagram logo">
           </div>
-        </div> </a>
 
+          <a href="Contact.html" class="mt-8 flex justify-center md:justify-start">
+              <div class=" gap-8 flex items-start justify-start mt-8">
+                <div class="relative group">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                    <button class="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600 text-center md:text-left md:justify-center">
+                        <span class="flex items-center space-x-5">
+                            <img src="Images/part2.png" width="30" height="30" alt="Icon">
+                            <span class="pr-6 text-gray-100">Contact US </span>
+                        </span>
+                        <span class="pl-6 text-indigo-400 group-hover:text-gray-100 transition duration-200">Get in touch &rarr;</span>
+                    </button>
+                </div>
+              </div>
+            </a>
       </div>
 
-      <div class="w-1/2 flex justify-end items-center">
-        <img src="Images/homelogo.jpg" class="max-h-full">
+      <div class="w-full md:w-1/2 flex justify-center items-center">
+          <img src="Images/homelogo.jpg" class="max-h-full">
       </div>
-    </section>
+  </section>
+
+
+
   </main>
+
+
+  <script>
+		const navLinks = document.querySelector('.nav-links')
+		function onToggleMenu(e) {
+			e.name = e.name === 'menu' ? 'close' : 'menu'
+			navLinks.classList.toggle('top-[-5%]')
+		}
+	</script>
+
 
 </body>
 </html>
